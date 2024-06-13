@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <h1>Weather App</h1> -->
+      <div class="search">
+        <input type="text" id="city" placeholder="Enter city name"> <br>
+        <button id="getWeatherBtn">Get Weather</button>
+      </div>
+      <div class="error">
+        <p> Incorrect city name</p>
+      </div>
+        <div id="weatherInfo">
+            <div class="weather">
+              <img src="images/cloud_day_forecast_sun_icon.png"  width="50px" class="weather-icon">
+              <h1 class="temp">22°c </h1>
+             <h2 class="city"> New York</h2>
+            <p class="weather-description"></p>
+               <div id="details">
+                  <div id="col" class="col1">
+                   <img src="https://www.svgrepo.com/show/521708/humidity.svg" width="30px">
+                    <p class="humidity " > 50%</p>
+                     <p> Humidity </p>
+                 </div>
+                 
+                 <div id="col">
+                   <img src="https://www.svgrepo.com/show/530100/wind-energy.svg" width="30px"> 
+                    <p class="wind " > 20 km/h</p>
+                     <p> Wind Speed</p>
+                 </div>                
+              </div>
+              <div id="time">
+                <img src="images/calendar-time-date-svgrepo.svg" width="20px"> 
+                 <p class="date-time" > </p>
+                  <p></p>
+              </div> 
+          </div>
+        
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
